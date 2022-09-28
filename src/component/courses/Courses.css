@@ -1,0 +1,60 @@
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 50px;
+    gap: 20px;
+
+}
+
+
+
+.first-info-section {
+    text-align: center;
+}
+
+.btn-set {
+    border: 1px solid white;
+    background-color: lightcyan;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.btn-set button {
+    border-radius: 15px;
+    border: none;
+    background-color: lightskyblue;
+    color: azure;
+}
+
+.btn-set button:hover {
+    background-color: blue;
+}
+
+.common-total {
+    border: 1px solid white;
+    background-color: lightcyan;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-report {
+    width: 100%;
+    border: none;
+    background-color: rgb(88, 88, 243);
+    border-radius: 5px;
+    color: azure;
+}
+
+.btn-report:hover {
+    background-color: blue;
+}
