@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1a",
+        "courseName": "Database Management System",
+        "classRoomNo": "315",
+        "classDuration": "2",
+        "img": "https://www.edureka.co/blog/wp-content/uploads/2019/10/Database-Management-System.jpg"
+    },
+    {
+        "id": "2b",
+        "courseName": "Research and Innovation",
+        "classRoomNo": "213",
+        "classDuration": "2",
+        "img": "https://w2brobotics.com/wp-content/uploads/2019/06/Research-and-Innovation-4.jpg"
+    },
+    {
+        "id": "3c",
+        "courseName": "Compiler Design Lab",
+        "classRoomNo": "504",
+        "classDuration": "3",
+        "img": "https://img.haikudeck.com/mg/GDJnwEhsFw_1409278542885.jpg"
+    },
+    {
+        "id": "4d",
+        "courseName": "Economics",
+        "classRoomNo": "501",
+        "classDuration": "2",
+        "img": "https://i0.wp.com/forestrypedia.com/wp-content/uploads/2018/05/Economics-2.jpg?ssl=1"
+    },
+    {
+        "id": "5e",
+        "courseName": "Softwer Project ",
+        "classRoomNo": "514",
+        "classDuration": "3",
+        "img": "https://res.cloudinary.com/boardinfinity/image/upload/t_blog_img/bi-websites/blog/11/blog-sheet-5--11-.png"
+    },
+    {
+        "id": "6f",
+        "courseName": "Android Development",
+        "classRoomNo": "221",
+        "classDuration": "2",
+        "img": "https://richestsoft.com/blog/wp-content/uploads/2019/02/Android-app-development.jpg"
+    }
+]
