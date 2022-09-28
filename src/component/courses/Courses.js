@@ -25,9 +25,7 @@ const Courses = () => {
 
 
     const addBreakTime = () => {
-        for (const breakTime of breakTimeTotal) {
-            break
-        }
+        breakTimePrevious = breakTimePrevious
     }
     return (
         <div className="container">
