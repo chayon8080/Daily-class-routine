@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Course from '../course/Course';
 import './Courses.css'
 const Courses = () => {
@@ -27,6 +29,9 @@ const Courses = () => {
     const addBreakTime = () => {
         breakTimePrevious = breakTimePrevious
     }
+
+
+    const notify = () => toast("Successfully Finished Today's class!");
     return (
         <div className="container">
             <div className="course-container">
@@ -48,7 +53,10 @@ const Courses = () => {
                 <div>
                     <h3>Add A Break</h3>
                     <div className='btn-set'>
-                        <button onClick={() => addBreakTime}> 0.5h</button><button>1h</button><button>1.5h</button><button>2h</button>
+                        <button onClick={() => addBreakTime}> 0.5h</button>
+                        <button>1h</button>
+                        <button>1.5h</button>
+                        <button>2h</button>
                     </div>
                 </div>
                 <div>
@@ -61,7 +69,8 @@ const Courses = () => {
                     </div>
                 </div>
                 <div>
-                    <button className='btn-report'>Todays Class Report</button>
+                    <button onClick={notify} className='btn-report'>Todays Class Report</button>
+                    <ToastContainer />
                 </div>
             </div>
         </div>
