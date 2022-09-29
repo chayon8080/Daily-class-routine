@@ -58,3 +58,61 @@
 .btn-report:hover {
     background-color: blue;
 }
+
+@media screen and (max-width:670px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;
+        padding: 50px;
+    }
+
+    .course-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 100px 50px;
+        gap: 20px;
+
+    }
+
+    .btn-set {
+        border: 1px solid white;
+        background-color: lightcyan;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 200px;
+        margin-left: 80px;
+    }
+
+    .title {
+        margin-left: 80px;
+    }
+
+    .common-total {
+        border: 1px solid white;
+        background-color: lightcyan;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-left: 80px;
+        width: 200px;
+    }
+
+    .btn-report {
+        width: 100%;
+        border: none;
+        background-color: rgb(88, 88, 243);
+        border-radius: 5px;
+        color: azure;
+        width: auto;
+        margin-left: 80px;
+    }
+
+    .first-info-section {
+        text-align: left;
+        margin-left: 50px;
+    }
+}

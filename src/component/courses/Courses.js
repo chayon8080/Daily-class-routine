@@ -27,7 +27,7 @@ const Courses = () => {
 
 
     const addBreakTime = () => {
-        breakTimePrevious = breakTimePrevious
+
     }
 
 
@@ -51,7 +51,7 @@ const Courses = () => {
                     <h5>Depertment: CSE</h5>
                 </div>
                 <div>
-                    <h3>Add A Break</h3>
+                    <h3 className='title'>Add A Break</h3>
                     <div className='btn-set'>
                         <button onClick={() => addBreakTime}> 0.5h</button>
                         <button>1h</button>
@@ -60,7 +60,7 @@ const Courses = () => {
                     </div>
                 </div>
                 <div>
-                    <h3>Final Report</h3>
+                    <h3 className='title'>Final Report</h3>
                     <div className='common-total'>
                         <h4>Total class Time:  {total}h</h4>
                     </div>
