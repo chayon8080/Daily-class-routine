@@ -1,0 +1,32 @@
+.ques-ans {
+    background-color: lightcyan;
+    border: none;
+    border-radius: 10px;
+    width: 700px;
+    padding: 20px;
+    height: 200px;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: rgb(22, 22, 52);
+}
+
+.ques-ans h1 {
+    color: blueviolet;
+}
+
+@media screen and (max-width:670px) {
+    .ques-ans {
+        background-color: lightcyan;
+        border: none;
+        border-radius: 10px;
+        width: 300px;
+        padding: 20px;
+        height: 500px;
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        color: rgb(22, 22, 52);
+    }
+
+}

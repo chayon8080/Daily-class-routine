@@ -13,19 +13,20 @@ const Courses = () => {
 
 
     const [timeset, setTime] = useState([])
-    const [breakTimeTotal, setBreakTime] = useState([])
+
     const addAllTime = (course) => {
         const newTime = [...timeset, course]
         setTime(newTime);
     }
 
     let total = 0;
-    let breakTimePrevious = 0;
+
     for (const time of timeset) {
         total = total + parseInt(time.course.classDuration)
     }
 
-
+    const [breakTimeTotal, setBreakTime] = useState([])
+    let breakTimePrevious = 0;
     const addBreakTime = () => {
 
     }
