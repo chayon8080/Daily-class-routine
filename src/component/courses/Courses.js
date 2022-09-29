@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Button from '../button/Button';
 import Course from '../course/Course';
 import './Courses.css'
 const Courses = () => {
@@ -23,12 +24,6 @@ const Courses = () => {
 
     for (const time of timeset) {
         total = total + parseInt(time.course.classDuration)
-    }
-
-    const [breakTimeTotal, setBreakTime] = useState([])
-    let breakTimePrevious = 0;
-    const addBreakTime = () => {
-
     }
 
 
@@ -54,10 +49,11 @@ const Courses = () => {
                 <div>
                     <h3 className='title'>Add A Break</h3>
                     <div className='btn-set'>
-                        <button onClick={() => addBreakTime}> 0.5h</button>
-                        <button>1h</button>
-                        <button>1.5h</button>
-                        <button>2h</button>
+
+                        <button >0.5h</button>
+                        <button >1h</button>
+                        <button >1.5h</button>
+                        <button >2h</button>
                     </div>
                 </div>
                 <div>
