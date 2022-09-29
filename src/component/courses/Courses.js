@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Button from '../button/Button';
 import Course from '../course/Course';
 import './Courses.css'
 const Courses = () => {
@@ -25,8 +24,10 @@ const Courses = () => {
     for (const time of timeset) {
         total = total + parseInt(time.course.classDuration)
     }
+    const [selectedValue, setSelectedValue] = useState(null)
 
-
+    const Values = [0.5, 1, 1.5, 2, 2.5]
+    const addValue = (value) => setSelectedValue(value)
     const notify = () => toast("Successfully Finished Today's class!");
     return (
         <div className="container">
@@ -49,11 +50,11 @@ const Courses = () => {
                 <div>
                     <h3 className='title'>Add A Break</h3>
                     <div className='btn-set'>
-
-                        <button >0.5h</button>
-                        <button >1h</button>
-                        <button >1.5h</button>
-                        <button >2h</button>
+                        {Values.map((item, i) =>
+                            <button
+                                key={i}
+                                onClick={() => addValue(item)}>{item}</button>
+                        )}
                     </div>
                 </div>
                 <div>
@@ -62,7 +63,7 @@ const Courses = () => {
                         <h4>Total class Time:  {total}h</h4>
                     </div>
                     <div className='common-total'>
-                        <h4>Break Time:{ }</h4>
+                        <h4>Break Time:{selectedValue}h</h4>
                     </div>
                 </div>
                 <div>
