@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Course from '../course/Course';
+import { addToDb, getCartItem } from '../utilities/saveDb';
 import './Courses.css'
 const Courses = () => {
     const [courses, setCourses] = useState([])
@@ -27,7 +28,10 @@ const Courses = () => {
     const [selectedValue, setSelectedValue] = useState(null)
 
     const Values = [0.5, 1, 1.5, 2, 2.5]
-    const addValue = (value) => setSelectedValue(value)
+    const addValue = (value) => {
+        setSelectedValue(value)
+        addToDb(value)
+    }
     const notify = () => toast("Successfully Finished Today's class!");
     return (
         <div className="container">
@@ -55,6 +59,7 @@ const Courses = () => {
                                 key={i}
                                 onClick={() => addValue(item)}>{item}</button>
                         )}
+
                     </div>
                 </div>
                 <div>
